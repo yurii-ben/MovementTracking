@@ -1,4 +1,4 @@
-# MOVEMENTTRACKING
+# MOVEMENT TRACKING
 
 Transforming fitness through real-time movement insights.
 
@@ -26,9 +26,9 @@ Transforming fitness through real-time movement insights.
 
 ## Overview
 
-**MovementTracking** is an innovative developer tool that leverages computer vision to enhance fitness applications through real-time movement analysis.
+**Movement Tracking** is an innovative developer tool that leverages computer vision to enhance fitness applications through real-time movement analysis.
 
-### Why MovementTracking?
+### Why Movement Tracking?
 
 This project empowers developers to create interactive exercise tracking applications that provide immediate feedback on user performance. The core features include:
 
@@ -52,7 +52,7 @@ This project requires the following dependencies:
 
 ### Installation
 
-To build **MovementTracking** from the source and install dependencies, follow these steps:
+To build **Movement Tracking** from the source and install dependencies, follow these steps:
 
 1. **Clone the repository:**
 
@@ -84,7 +84,7 @@ npm start
 
 ### Testing
 
-**MovementTracking** uses the `{test_framework}` test framework. To run the test suite, use:
+**Movement Tracking** uses the `{test_framework}` test framework. To run the test suite, use:
 
 ```bash
 npm test
