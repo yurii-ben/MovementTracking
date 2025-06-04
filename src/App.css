@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.App-header {
+  margin-bottom: 30px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #61dafb;
+}
+
+.App-header p {
+  margin: 10px 0;
+  color: #aaa;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  color: white;
+}
+
+.camera-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.control-button {
+  background: linear-gradient(45deg, #61dafb, #21aa6f);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(97, 218, 251, 0.3);
+}
+
+.control-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(97, 218, 251, 0.4);
+}
+
+.control-button:active {
+  transform: translateY(0);
+}
+
+.angles-display {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.angles-display h3 {
+  margin-top: 0;
+  color: #61dafb;
+  font-size: 1.5rem;
+}
+
+.angles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.angle-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.angle-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.joint-name {
+  font-size: 0.9rem;
+  color: #aaa;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.angle-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #61dafb;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+  
+  .App-header h1 {
+    font-size: 2rem;
+  }
+  
+  .angles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .control-button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
